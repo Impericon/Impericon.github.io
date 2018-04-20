@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#box {
+	width: 18rem;
+	margin: auto;
+	margin-top: 4rem;
+	box-shadow: 0 0 0.8rem #000;
+	border-radius: 0 0 0 0.5rem;
+}
+
+#title {
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	border-radius: 0.2rem 0.2rem 0 0;
+	font-size: 2.5rem;
+	color:#FFF;
+	text-align:center;
+	padding: 1.5rem 0;
+	border-bottom:0.3rem solid #232323;
+}
+
+#form { 
+	height: 4rem;
+	text-align:center;
+	background-color: #333;
+	border-radius: 0 0 0.2rem 0.2rem;
+}
+
+#rpIconBox { 
+	width: 24%;
+	float:left;
+	height: 100%;
+}
+
+#rpIcon {
+	margin: 0.5rem auto;
+	height: 3rem;
+	width: 3rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../img/icon_rp.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 50% 50%;
+	box-shadow: 0 0 0.4rem #000;
+}
+
+#rpInput {
+	float:left;
+	width: 54%;
+	height: 100%;
+	background: transparent;
+    border: none;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+}
+#rpInput::-webkit-input-placeholder{
+  color: rgb(60, 0, 248);  /* change [placeholder color] by this*/
+  text-shadow: none;
+  -webkit-text-fill-color: initial;
+}
+input[type=number] { /* no controls on input field for Firefox */
+    -moz-appearance:textfield;
+}
+
+#send {
+	width: 22%;
+	float: left;
+	height: 100%;
+	border: none;
+	font-size: 1.4rem;
+	background: none;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 0.15em #E5202F;
+	border-radius: 0 0 0.2rem 0;
+	transition: all 500ms ease; 
+}
+
+#result {
+	opacity: 0;
+	width: 18rem;
+	margin: auto;
+	border-radius: 0 0 0.2rem 0.2rem;
+	box-shadow: 0 0 1em #000;
+}
+
+#money {
+    font-size:1.4rem;
+	line-height:1.8rem;
+	width: 100% - 3rem;
+	padding: 1.5rem;
+	background-color:#FFF;
+}
+#moneyFull {
+	font-size:2rem;
+	line-height:2.2rem;
+	background-color:#999;
+	width: 100% - 3rem;
+	padding: 1rem 1.5rem;
+}
+#leftover {
+	font-size:1rem;
+	line-height:1.5rem;
+	background-color:#306;
+	width: 100% - 3rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0 0 0.2rem 0.2rem;
+	color:#CCC;
+	background-color: #333;
+}
+
+
+/* --- COLORS --- */
+::selection {
+  background: #FFF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFF; /* Gecko Browsers */
+}
+#rpInput::selection {
+  background: #E5202F; /* WebKit/Blink Browsers */
+}
+#rpInput::-moz-selection {
+  background: #E5202F; /* Gecko Browsers */
+}
+#money::selection {
+  background: #FFF; /* WebKit/Blink Browsers */
+}
+#money::-moz-selection {
+  background: #FFF; /* Gecko Browsers */
+}
+
+#rpInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3e3e3e;
+    opacity: 1; /* Firefox */
+}
+#rpInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #3e3e3e;
+}
+#rpInput::-ms-input-placeholder { /* Microsoft Edge */
+    color: #3e3e3e;
+}
+
+#send:hover {
+	background-color: #E5202F;
+	box-shadow: #E5202F;
+	color: #FFF;
+}
+.color1 {
+	color: #E5202F;
+}
+.color2 {
+	color:#FFF;
+}
+.color3 {
+	color:#000;
+}
+.bgColor1 {
+	background-color: #E5202F;
+}
+
+
+/* --- MODS --- */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
