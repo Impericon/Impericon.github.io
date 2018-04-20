@@ -97,7 +97,6 @@ input[type=number] { /* no controls on input field for Firefox */
 	opacity: 0;
 	width: 18rem;
 	margin: auto;
-	background-color:#FFF;
 	border-radius: 0 0 0.2rem 0.2rem;
 	box-shadow: 0 0 1em #000;
 }
@@ -105,15 +104,16 @@ input[type=number] { /* no controls on input field for Firefox */
 #money {
     font-size:1.4rem;
 	line-height:1.8rem;
-	width: 100%;
+	width: 100% - 3rem;
 	padding: 1.5rem;
+	background-color:#FFF;
 }
 #moneyFull {
 	font-size:2rem;
 	line-height:2.2rem;
-	background-color:#3F6;
+	background-color:#999;
 	width: 100% - 3rem;
-	padding: 1.5rem;
+	padding: 1rem 1.5rem;
 }
 #leftover {
 	font-size:1rem;
@@ -122,6 +122,8 @@ input[type=number] { /* no controls on input field for Firefox */
 	width: 100% - 3rem;
 	padding: 0.5rem 1.5rem;
 	border-radius: 0 0 0.2rem 0.2rem;
+	color:#CCC;
+	background-color: #333;
 }
 
 
