@@ -138,9 +138,9 @@ function calculate() {
 		number5 = "";
 	}
 	
-	rp6 = rp6.toLocaleString();
 	var number6;
 	if (rp6 !== 0) {
+		rp6 = rp6.toLocaleString();
 		number6 = rp6 + " x " + value[6].value + "€<br>";
 	} else {
 		number6 = "";
